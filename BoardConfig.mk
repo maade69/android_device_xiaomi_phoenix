@@ -72,9 +72,6 @@ TARGET_COPY_OUT_ODM := odm
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-# Recovery
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-12-01
 
