@@ -21,10 +21,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from phoenix device
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common 404 stuff.
+$(call inherit-product, vendor/404/configs/common.mk)
 
-PRODUCT_NAME := lineage_phoenix
+TARGET_GAPPS_ARCH := arm64
+
+# Inherit GApps
+$(call inherit-product, vendor/google/pixel/config.mk)
+$(call inherit-product, vendor/google/gms/config.mk)
+
+PRODUCT_NAME := p404_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30

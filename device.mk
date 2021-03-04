@@ -42,7 +42,6 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
-# Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150 \
     libkeymaster_messages.vendor:64
@@ -95,7 +94,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-p404 \
     $(LOCAL_PATH)/overlay-system
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
